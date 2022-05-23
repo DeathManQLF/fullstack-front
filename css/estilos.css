@@ -1,0 +1,19 @@
+* {
+    font-family: Verdana;
+}
+
+#titulo__imagen{
+    display: flex;
+}
+
+.form__cliente {
+    display: flex;
+}
+
+#fondo__cliente {
+    background-color: #55ccff;
+}
+
+#fondo__pedido {
+    background-color: #40ccbb;
+}
