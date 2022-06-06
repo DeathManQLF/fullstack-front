@@ -9,3 +9,18 @@ $(function () {
         }
     });
 });
+
+$("#tamaño").on('change', function () {
+    tamaño = $(this).val();
+    $.ajax({
+        url: 'http://localhost:5000/checksize',
+        method: 'POST',
+        success: function () {
+            if (tamaño == 'M' | tamaño == 'L' | tamaño == 'XXL') {
+                $('#resultado_tamaño').append('Disponible')
+            } else if (tamaño == 'S') {
+                $('#resultado_tamaño').append('No Disponible')
+            }
+        }
+    });
+});
