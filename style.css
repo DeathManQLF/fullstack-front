@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana;
+}
+
+#TituloLogo {
+    display: flex;
+    align-items: center;
+}
+
+#FormluarioDatosCliente {
+    background-color: #55ccff;
+}
+
+#FormularioDatosPedido {
+    background-color: #40ccbb;
+}
+
+.InputsFormulario {
+    display: flex;
+    align-items: center;
+}

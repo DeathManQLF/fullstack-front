@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Pedido de Pizzas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="TituloLogo">
+        <img src="images/pizza.logo.png" alt="Logo de Pizzas Full Stack" width="200">
+        <h1>Pizzas Full Stack</h1>
+    </div>
+    
+
+    <form id="FormularioPizza" action="http://localhost:5000/pizza" method="post">
+
+        <div id="FormluarioDatosCliente">
+
+            <h2>Datos del cliente</h2>
+
+            <div class="InputsFormulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <br>
+
+            <div class="InputsFormulario">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <br>
+
+            <div class="InputsFormulario">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <br>
+
+            <div class="InputsDatosCliente">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <br>
+
+            <div class="InputsFormulario">
+                <label for="direccion">Dirección postal:</label>
+                <textarea id="direccion" name="direccion"></textarea>
+            </div>
+            <br>
+
+        </div>
+
+        <div id="FormularioDatosPedido">
+
+            <h2 id="DatosDelPedido">Datos del pedido</h2>
+
+            <div class="InputsFormulario">
+                <label for="tamano_pizza">Tamaño de la pizza:</label>
+
+                <select id="tamano_pizza" name="tamano_pizza">
+                    <option value="pequena">Pequeña</option>
+                    <option value="mediana">Mediana</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+            <br>
+
+    
+
+            <label>Ingredientes deseados:</label>
+
+            <input type="checkbox" id="jamonyork" name="ingredientes" value="Jamón York">
+            <label for="jamonyork">Jamón York</label>
+            <input type="checkbox" id="champinones" name="ingredientes" value="Champiñones">
+            <label for="champinones">Champiñones</label>
+            <input type="checkbox" id="pepperoni" name="ingredientes" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="aceitunas" name="ingredientes" value="Aceitunas">
+            <label for="aceitunas">Aceitunas</label>
+            <br>
+
+        </div>
+            <br>
+
+        <input type="submit" value="Enviar pedido">
+
+    </form>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
